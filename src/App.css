@@ -36,3 +36,44 @@
     transform: rotate(360deg);
   }
 }
+
+.my-exit-done::after{
+  content: 'Ура!';
+}
+
+.my-enter-done{
+  background: #e2cc53;
+  transition: all .5s .5s ease-in;
+}
+
+.my-exit-done{
+  background: #53e264;
+  transition: all .5s .5s ease-in;
+}
+
+.my-enter-active {
+  background: #336699;
+  transition: all .5s .5s ease-in;
+}
+
+.my-exit-active {
+  background: #73ff83;
+  transition: all .5s .5s ease-in;
+}
+
+.fade-enter{
+  opacity: 0;
+}
+.fade-exit{
+  opacity: 1;
+}
+.fade-enter-active{
+  opacity: 1;
+}
+.fade-exit-active{
+  opacity: 0;
+}
+.fade-enter-active,
+.fade-exit-active{
+  transition: opacity 500ms;
+}
